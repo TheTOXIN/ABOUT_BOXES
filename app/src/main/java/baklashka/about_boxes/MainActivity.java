@@ -13,5 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void test() {
         int i = 666;
+        String s = "ABOUT_BOXES";
     }
 }
