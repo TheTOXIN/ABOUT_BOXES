@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ABOUT_BOXES</string>
+    <string name="gameVersion">ver|0.0</string>
+    <string name="toPlay">Играть</string>
+    <string name="toAchivments">Достижения</string>
+    <string name="toSittings">Настройки</string>
+    <string name="toExit">Выход</string>
 </resources>
