@@ -8,29 +8,22 @@
     android:background="@drawable/sklad"
     tools:context="baklashka.about_boxes.MainActivity">
 
-    <ImageView
-        android:id="@+id/ver_window"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/version" />
-
     <TextView
         android:id="@+id/version"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:background="@drawable/version"
+        android:paddingTop="2dp"
+        android:paddingLeft="4dp"
         android:text="@string/gameVersion"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="43dp"
-        android:layout_marginTop="15dp" />
-
+        android:textSize="30sp" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="275dp"
-        android:layout_marginStart="275dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginStart="250dp"
         android:src="@drawable/logo" />
 
     <LinearLayout
