@@ -11,8 +11,11 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-    public Animation animlogo;
+    public Animation anim;
     public ImageView logo;
+    public ImageView play;
+    public ImageView achivments;
+    public ImageView settings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +28,24 @@ public class MainActivity extends Activity {
         tv.setTypeface(tf);
 
         logo = (ImageView) findViewById(R.id.logo);
-        animlogo = AnimationUtils.loadAnimation(this, R.anim.anim_logo);
-        logo.startAnimation(animlogo);
+        play = (ImageView) findViewById(R.id.play);
+        achivments = (ImageView) findViewById(R.id.achivments);
+        settings = (ImageView) findViewById(R.id.settings);
+
+        anim = AnimationUtils.loadAnimation(this, R.anim.anim_logo);
+        logo.startAnimation(anim);
+
+        anim = AnimationUtils.loadAnimation(this, R.anim.anim_menu);
+
+        for (int i = 1; i <= 3; i++) {
+            if (i == 1)
+                play.startAnimation(anim);
+            else if (i == 2)
+                achivments.startAnimation(anim);
+            else if (i == 3)
+                settings.startAnimation(anim);
+
+        }
     }
 }
 
