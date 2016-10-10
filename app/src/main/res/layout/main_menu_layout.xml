@@ -35,23 +35,26 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/play"
             android:layout_width="250dp"
             android:layout_height="65dp"
-            android:src="@drawable/play" />
+            android:visibility="invisible"
+            android:background="@drawable/play" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/achivments"
             android:layout_width="250dp"
             android:layout_height="65dp"
-            android:src="@drawable/achivments" />
+            android:visibility="invisible"
+            android:background="@drawable/achivments" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/settings"
             android:layout_width="250dp"
             android:layout_height="65dp"
-            android:src="@drawable/settings" />
+            android:visibility="invisible"
+            android:background="@drawable/settings" />
 
     </LinearLayout>
 
